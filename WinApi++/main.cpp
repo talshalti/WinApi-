@@ -40,13 +40,13 @@ class File {
         return data;
     }
 };
-
 }
 
 
 int main() {
     std::cout << winpp::env::expend("%USERPROFILE%") << std::endl;
-    std::cout << winpp::env::vars["USERPROFILE"] << std::endl;
+    winpp::env::vars.set("party", "ON!");
+    std::cout << winpp::env::vars["party"] << std::endl;
     system("pause");
     return 0;
 }

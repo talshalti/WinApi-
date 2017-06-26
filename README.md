@@ -8,7 +8,7 @@ WinApi++ focuses to wrap the windows API for non-gui applications.
 
 ```cpp
 std::cout << winpp::env::expend("%USERPROFILE%") << endl;
-std::cout << winpp::env::vars["%USERPROFILE%"] << endl;
+std::cout << winpp::env::vars["USERPROFILE"] << endl;
 ```
 
 
